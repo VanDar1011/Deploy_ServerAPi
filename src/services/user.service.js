@@ -15,7 +15,7 @@ module.exports = {
         status: 200,
         message: "Succes get Users",
         data: users,
-        total: Math.ceil(totalItems / limit),
+        total: users.length(),
       };
     } catch (error) {
       throw error;
